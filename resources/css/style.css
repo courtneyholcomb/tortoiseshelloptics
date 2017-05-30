@@ -1,0 +1,251 @@
+
+
+html {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+body {
+  line-height: 1.4rem;
+}
+.container {
+  display: flex;
+  max-width: 960px;
+}
+
+/* Main Header */
+.main-header {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  height: 30rem;
+}
+
+/* Nav Bar */
+.navbar {
+  background-color: rgb(95, 158, 160);
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  margin: auto;
+  display: flex;
+}
+.logo {
+  align-items: center;
+}
+.logo img {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  height: 1.5rem;
+}
+.menu {
+  display: block;
+  margin: 1rem 1rem 1rem 0;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+h1 {
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
+  background-color: white;
+}
+.main-tagline {
+  justify-content: flex-end;
+}
+
+/* Icons */
+.icons {
+  justify-content: center;
+  margin: auto;
+}
+.icon-box {
+  flex-direction: column;
+  margin: 3rem;
+  align-content: center;
+  justify-content: center;
+  width: 5rem;
+}
+.icon-image {
+  justify-content: center;
+  align-content: center;
+}
+.icon-text {
+  text-align: center;
+  justify-content: center;
+}
+.icon-image img {
+  width: 5rem;
+  height: auto;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+.paper-image {
+  justify-content: center;
+}
+.paper-image img {
+  width: 3.5rem;
+  height: auto;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+/* Info Section */
+.info-section {
+  justify-content: center;
+  margin: auto;
+}
+.info {
+  flex-direction: column;
+  max-width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+.info-title {
+  background-color: rgb(95, 158, 160);
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+}
+
+/* Footer */
+footer {
+  background-color: azure;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+
+/* Media Query section */
+@media only screen and (min-width: 1001px) {
+  .tablet {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .desktop {
+    display: none;
+  }
+  .tablet .container {
+    max-width: 100%;
+    margin: none;
+  }
+  .main-header {
+    background-image: url(../images/glasses-bg.png);
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-size: cover;
+    padding-top: 0;
+    height: 22rem;
+}
+  h1 {
+    padding: 0.75rem 4rem;
+    display: inline-block;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    line-height: 2.4rem;
+    background-color: white;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tablet {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .main-header {
+    background-image: url(../images/glasses-bg.png);
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: cover;
+    padding-top: 0;
+    height: 17rem;
+}
+  h1 {
+    padding: .1rem 20%;
+    display: block;
+    width: 100%;
+    margin-top: 8rem;
+    background-color: white;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .icons {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem 0;
+  }
+  .icon-box {
+    flex-direction: column;
+    margin: 1.5rem;
+    align-content: center;
+    justify-content: center;
+    width: 5rem;
+    font-size: 0.77rem;
+  }
+
+  .info-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 5%;
+    margin-top: 0;
+  }
+  .info-title {
+    background-color: rgb(95, 158, 160);
+    padding: 0.5rem 35%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    max-width: 10rem;
+  }
+  .info-text p {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  footer {
+    background-color: azure;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+  }
+  footer img {
+    height: 1.5rem;
+  }
+}
